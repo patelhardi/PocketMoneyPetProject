@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Loan Payment</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+        <script src="js/script.js"></script>
+	</head>
+    <body>
+        <div id="main-box">
+        
+            <!-- Form -->
+            <form method="post" id="login-form" name="loginForm" action="#">
+                <h1>PocketMoney</h1>
+                <div id="content">
+                    <label for="totalAmount">Total Amount: $</label>
+                    <input type="text" id="totalAmount" name="total_Amount" /> 
+                </div>
+                <div id="content">
+                    <label for="payNowAmount">Amount you want to pay now: $</label>
+                    <input type="text" id="payNowAmount" name="payNow_Amount" />
+                </div>
+                
+                <input type="submit" id="button" value="Pay Now" />
+            </form>
+            
+            <!-- Error Message -->
+            <div id="errormsg"></div>
+
+            <!-- Result Output -->
+            <div id="result">
+                <p>Amount Due: $<span id="dueresult"></span></p>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div id="progressBar">
+                <div id="valuePercent">0%</div>
+            </div>
+
+            <!-- Success Message -->
+            <div id="success">
+                <p>Congratulations!!! You successfully completed Your Payment. <i class="far fa-smile"></i></p>
+                <p>Paid Amount Details: <span id="paidresult"></span></p>
+            </div>
+        </div>
+    </body>
+</html>

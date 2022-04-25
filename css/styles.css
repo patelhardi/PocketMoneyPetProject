@@ -1,0 +1,57 @@
+/* body content */
+#main-box{
+    position: relative; 
+    top: 150px;
+    left: 480px;   
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: lightgray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+/* form */
+#content{
+    padding-top: 30px;
+    margin: 0;
+}
+#button{
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    background-color: darkgray;
+    color: white;
+    font-size: 18px;
+}
+/* result output */
+#result{
+    margin-top: 50px;
+    display: none;
+}
+#success{
+    display: none;
+}
+/* circular progress bar */
+#progressBar {
+    width: 30%;
+    height: 30%;
+    background-color: grey;
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin: 10px;
+}
+#progressBar:before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+#valuePercent{
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
