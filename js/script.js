@@ -46,7 +46,7 @@ window.onload = function() {
             var progress = setInterval(function(){
                 progressvalue++; 
                 percentagevalue.innerHTML = Math.round(getpercentage) + "%";
-                progressbarresult.style.background = "conic-gradient(#404040 " + (progressvalue*3.6) + "deg, #e6e6e6 " + progressvalue + "deg)";
+                progressbarresult.style.background = "conic-gradient(#2aaf44 " + (progressvalue*3.6) + "deg, #b6f8c3 " + progressvalue + "deg)";
 
                 if(progressvalue === Math.round(getpercentage)){
                     clearInterval(progress);
@@ -70,11 +70,8 @@ window.onload = function() {
                 formHandle.style.display = "none";
                 resultoutput.style.display = "none";
                 document.getElementById("success").style.display = "block";
-                document.getElementById("success").style.color = "blue";
-                document.getElementById("main-box").style.background = "url(images/christmas-snowman.gif) no-repeat bottom center";
-                document.getElementById("main-box").style.backgroundColor = "lightgrey"
+                document.getElementById("success").style.color = "white";
                 paidoutputresult.innerHTML = paidamount;
-                
             }
             return dueresult;
         }

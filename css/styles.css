@@ -1,13 +1,5 @@
 /* body content */
-#main-box{
-    position: relative; 
-    top: 150px;
-    left: 480px;   
-    width: 600px;
-    height: 500px;
-    text-align: center;
-    border: 2px solid black;
-    background-color: lightgray;
+body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
 /* form */
@@ -16,12 +8,13 @@
     margin: 0;
 }
 #button{
-    margin-top: 20px;
-    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    height: auto;
     width: 100px;
-    background-color: darkgray;
     color: white;
     font-size: 18px;
+    text-align: center;
 }
 /* result output */
 #result{
@@ -33,9 +26,9 @@
 }
 /* circular progress bar */
 #progressBar {
-    width: 30%;
-    height: 30%;
-    background-color: grey;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(90deg, rgba(66,128,90,1) 0%, rgba(145,186,52,1) 100%);;
     border-radius: 50%;
     position: relative;
     display: grid;
